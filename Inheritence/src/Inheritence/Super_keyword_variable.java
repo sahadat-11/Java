@@ -15,8 +15,8 @@
 ////    }
 ////}
 ////// output : 5; derived class value
-//
-//
+
+
 //package Inheritence;
 //class A {
 //    int x = 10;
@@ -34,8 +34,8 @@
 //    }
 //}
 //// output : 10; parent class value
-//
-//
+
+
 //// Java code to show use of super
 //// keyword with variables
 //
@@ -64,6 +64,6 @@
 //        small.display();
 //    }
 //}
-//
-//
+// 120
+
 ////https://youtu.be/_ZrRORCIev4?si=liPDwCvfng-WwcxQ

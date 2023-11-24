@@ -25,9 +25,8 @@
 //        ob.foo();
 //    }
 //}
-//
-//
-//
+
+
 //// Java Program to Illustrate Unsupportance of
 //// Multiple Inheritance
 //
@@ -74,3 +73,29 @@
 //        t.fun();
 //    }
 //}
+
+
+//class Class1{
+//    public void display(){
+//        System.out.println("Display method inside Class1.");
+//    }
+//}
+//
+//class Class2{
+//    public void display(){
+//        System.out.println("Display method inside Class2.");
+//    }
+//}
+//
+////let multiple inheritance is possible.
+//public class Test extends Class1, Class2{
+//    public static void main(String args[]){
+//        Test obj = new Test();
+//        //Ambiguity problem in method call which class display() method will be called.
+//        obj.display();
+//    }
+//}
+//Output:
+        //Exception in thread "main" java.lang.Error:
+        //Unresolved compilation problem:
+       // at com.w3spoint.business.Test.main(Test.java:19)
