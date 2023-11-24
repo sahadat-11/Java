@@ -36,7 +36,5 @@ public class Sample {
 
         // getter
         person.printdetails();
-
-
     }
 }

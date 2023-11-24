@@ -3,8 +3,8 @@ class Myclass2 {
     String name;
     int id;
     Myclass2(String x, int i) {
-        name = x;
-        id = i;
+        name = x;// default access modifier
+        id = i;// default access modifier
     }
 }
 public class Parameterized_constructor {
