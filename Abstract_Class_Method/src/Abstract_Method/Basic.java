@@ -17,3 +17,5 @@ public class Basic {
         ob.display();
     }
 }
+//In getname method
+//in display method
