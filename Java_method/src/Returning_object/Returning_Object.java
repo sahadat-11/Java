@@ -1,52 +1,36 @@
-// Java program to Demonstrate One Object to
-// Initialize Another
+// Java Program to Demonstrate Returning of Objects
 
 // Class 1
-class Box {
-    double width, height, depth;
+class ObjectReturnDemo {
+    int a;
 
-    // Notice this constructor. It takes an
-    // object of type Box. This constructor use
-    // one object to initialize another
-    Box(Box ob)
+    // Constructor
+    ObjectReturnDemo(int i) { a = i; }
+
+    // Method returns an object
+    ObjectReturnDemo incrByTen()
     {
-        width = ob.width;
-        height = ob.height;
-        depth = ob.depth;
+        ObjectReturnDemo temp
+                = new ObjectReturnDemo(a + 10);
+        return temp;
     }
-
-    // constructor used when all dimensions
-    // specified
-    Box(double w, double h, double d)
-    {
-        width = w;
-        height = h;
-        depth = d;
-    }
-
-    // compute and return volume
-    double volume() { return width * height * depth; }
 }
 
-// MAin class
-class GFG {
+// Class 2
+// Main class
+public class GFG {
+
     // Main driver method
     public static void main(String args[])
     {
-        // Creating a box with all dimensions specified
-        Box mybox = new Box(10, 20, 15);
 
-        // Creating a copy of mybox
-        Box myclone = new Box(mybox);
+        // Creating object of class1 inside main() method
+        ObjectReturnDemo ob1 = new ObjectReturnDemo(2);
+        ObjectReturnDemo ob2;
 
-        double vol;
+        ob2 = ob1.incrByTen();
 
-        // Get volume of mybox
-        vol = mybox.volume();
-        System.out.println("Volume of mybox is " + vol);
-
-        // Get volume of myclone
-        vol = myclone.volume();
-        System.out.println("Volume of myclone is " + vol);
+        System.out.println("ob1.a: " + ob1.a);
+        System.out.println("ob2.a: " + ob2.a);
     }
 }
