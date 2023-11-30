@@ -1,6 +1,5 @@
 package One_dimension;
 import java.util.Scanner;
-
 public class One_dimension {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -17,12 +16,10 @@ public class One_dimension {
         for(int i = 0; i < 10; i++) {
             System.out.println(arr1[i]);
         }
-
         int ar[] = {2, 3, 4, 8}; // declare, allocate, and initialize;
         for(int i = 0; i < ar.length; i++) {
             System.out.println(ar[i]);
         }
-
         int arr2[] = new int[20]; // declare and allocate
         // get input from users
         for(int i = 0; i < 5; i++) {
