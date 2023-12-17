@@ -14,7 +14,7 @@ class MyClass implements MyInterface {
 
 public class Main {
     public static void main(String[] args) {
-        // Access the interface variable without creating an instance
+        // Access the interface variable without creating an instance for static variable
         System.out.println("Constant value: " + MyInterface.MY_CONSTANT);
 
         // Attempting to modify the interface variable (results in a compilation error)
